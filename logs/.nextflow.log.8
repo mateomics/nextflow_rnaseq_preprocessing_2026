@@ -1,0 +1,295 @@
+May-01 21:42:54.303 [main] DEBUG nextflow.cli.Launcher - $> nextflow run ./src/nextflow_QC_cleaning.nf --input './data/raw/*.fastq.gz' --outdir ./results/nextflow_PE -with-conda -with-report report.html -with-trace trace.txt -with-timeline timeline.html
+May-01 21:42:54.422 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.3
+May-01 21:42:54.440 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/majiso/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2
+May-01 21:42:54.450 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+May-01 21:42:54.450 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+May-01 21:42:54.453 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+May-01 21:42:54.464 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+May-01 21:42:54.485 [main] DEBUG nextflow.config.ConfigBuilder - Found config home: /home/majiso/.nextflow/config
+May-01 21:42:54.488 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/majiso/.nextflow/config
+May-01 21:42:54.514 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/majiso/.nextflow/secrets/store.json
+May-01 21:42:54.518 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@400d912a] - activable => nextflow.secret.LocalSecretsProvider@400d912a
+May-01 21:42:54.529 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+May-01 21:42:54.951 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+May-01 21:42:54.966 [main] DEBUG nextflow.cli.CmdRun - Launching `./src/nextflow_QC_cleaning.nf` [stupefied_rosalind] DSL2 - revision: 54e9cd60d5
+May-01 21:42:54.967 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+May-01 21:42:54.967 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+May-01 21:42:55.013 [main] DEBUG nextflow.Session - Session UUID: bf00e763-0863-4710-bda5-a957134846a5
+May-01 21:42:55.014 [main] DEBUG nextflow.Session - Run name: stupefied_rosalind
+May-01 21:42:55.014 [main] DEBUG nextflow.Session - Executor pool size: 96
+May-01 21:42:55.021 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+May-01 21:42:55.043 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.3 build 5916
+  Created: 09-07-2024 19:35 UTC (13:35 CDT)
+  System: Linux 5.14.0-654.el9.x86_64
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 21-internal-adhoc.conda.src
+  Encoding: UTF-8 (UTF-8)
+  Process: 3862850@chaac.lcg.unam.mx [132.248.220.18]
+  CPUs: 96 - Mem: 754.6 GB (94.3 GB) - Swap: 4 GB (220 KB) - Virtual threads ON
+May-01 21:42:55.072 [main] DEBUG nextflow.Session - Work-dir: /export/space3/users/majiso/.nxf_work [xfs]
+May-01 21:42:55.074 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /export/space3/users/majiso/LCG_Gen22/LCG_Sem4/Transcriptomica/Tabula_Muris_Transcriptomics_2026/src/bin
+May-01 21:42:55.085 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+May-01 21:42:55.097 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+May-01 21:42:55.142 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+May-01 21:42:55.153 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
+May-01 21:42:55.205 [main] DEBUG nextflow.Session - Session start
+May-01 21:42:55.209 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /export/space3/users/majiso/LCG_Gen22/LCG_Sem4/Transcriptomica/Tabula_Muris_Transcriptomics_2026/trace.txt
+May-01 21:42:55.476 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+May-01 21:42:55.974 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+May-01 21:42:55.975 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-01 21:42:55.981 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+May-01 21:42:55.988 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=96; memory=754.6 GB; capacity=96; pollInterval=100ms; dumpInterval=5m
+May-01 21:42:55.990 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+May-01 21:42:56.046 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+May-01 21:42:56.046 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-01 21:42:56.062 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+May-01 21:42:56.062 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-01 21:42:56.077 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+May-01 21:42:56.077 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-01 21:42:56.082 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+May-01 21:42:56.083 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-01 21:42:56.089 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+May-01 21:42:56.089 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-01 21:42:56.093 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: FASTQC, FASTQC_RAW, FASTQC_CLEAN, MULTIQC_CLEAN, MULTIQC_RAW, MULTIQC, PARSE_QC, FASTP
+May-01 21:42:56.093 [main] DEBUG nextflow.Session - Igniting dataflow network (7)
+May-01 21:42:56.099 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTQC_RAW
+May-01 21:42:56.099 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: ./data/raw/; pattern: *.fastq.gz; options: [checkIfExists:true]
+May-01 21:42:56.099 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MULTIQC_RAW
+May-01 21:42:56.100 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PARSE_QC
+May-01 21:42:56.100 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTP
+May-01 21:42:56.100 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTQC_CLEAN
+May-01 21:42:56.100 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MULTIQC_CLEAN
+May-01 21:42:56.101 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_369f67487ac61b3b: /export/space3/users/majiso/LCG_Gen22/LCG_Sem4/Transcriptomica/Tabula_Muris_Transcriptomics_2026/src/./parse_fastqc.nf
+  Script_1f5af330d311622f: /export/space3/users/majiso/LCG_Gen22/LCG_Sem4/Transcriptomica/Tabula_Muris_Transcriptomics_2026/src/./fastp.nf
+  Script_3f1d6c4654e15d34: /export/space3/users/majiso/LCG_Gen22/LCG_Sem4/Transcriptomica/Tabula_Muris_Transcriptomics_2026/src/./fastqc.nf
+  Script_a5e5d0b44b4c277a: /export/space3/users/majiso/LCG_Gen22/LCG_Sem4/Transcriptomica/Tabula_Muris_Transcriptomics_2026/src/./multiqc.nf
+  Script_a01de3a0acead880: /export/space3/users/majiso/LCG_Gen22/LCG_Sem4/Transcriptomica/Tabula_Muris_Transcriptomics_2026/src/nextflow_QC_cleaning.nf
+May-01 21:42:56.102 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+May-01 21:42:56.102 [main] DEBUG nextflow.Session - Session await
+May-01 21:42:56.266 [Actor Thread 52] DEBUG nextflow.conda.CondaCache - conda found local env for environment=bioconda::fastqc=0.12.1; path=/export/space3/users/majiso/.nxf_work/conda/env-49dea791c31ead673ed2e341e1c6d206
+May-01 21:42:56.358 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:42:56.360 [Task submitter] INFO  nextflow.Session - [2c/604baf] Submitted process > FASTQC_RAW (7)
+May-01 21:42:56.370 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:42:56.371 [Task submitter] INFO  nextflow.Session - [cf/f99095] Submitted process > FASTQC_RAW (13)
+May-01 21:42:56.377 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:42:56.378 [Task submitter] INFO  nextflow.Session - [2b/853002] Submitted process > FASTQC_RAW (2)
+May-01 21:42:56.383 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:42:56.383 [Task submitter] INFO  nextflow.Session - [74/6fcc35] Submitted process > FASTQC_RAW (16)
+May-01 21:42:56.387 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:42:56.388 [Task submitter] INFO  nextflow.Session - [b5/ecd3dd] Submitted process > FASTQC_RAW (9)
+May-01 21:42:56.393 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:42:56.393 [Task submitter] INFO  nextflow.Session - [a1/a22483] Submitted process > FASTQC_RAW (10)
+May-01 21:42:56.397 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:42:56.398 [Task submitter] INFO  nextflow.Session - [47/76de20] Submitted process > FASTQC_RAW (3)
+May-01 21:42:56.402 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:42:56.402 [Task submitter] INFO  nextflow.Session - [68/687199] Submitted process > FASTQC_RAW (8)
+May-01 21:42:56.406 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:42:56.406 [Task submitter] INFO  nextflow.Session - [08/2f0a14] Submitted process > FASTQC_RAW (11)
+May-01 21:42:56.411 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:42:56.411 [Task submitter] INFO  nextflow.Session - [c4/79a282] Submitted process > FASTQC_RAW (6)
+May-01 21:42:56.416 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:42:56.416 [Task submitter] INFO  nextflow.Session - [92/68699f] Submitted process > FASTQC_RAW (12)
+May-01 21:42:56.420 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:42:56.420 [Task submitter] INFO  nextflow.Session - [c3/99f0eb] Submitted process > FASTQC_RAW (14)
+May-01 21:42:56.424 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:42:56.425 [Task submitter] INFO  nextflow.Session - [8f/168539] Submitted process > FASTQC_RAW (1)
+May-01 21:42:56.430 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:42:56.430 [Task submitter] INFO  nextflow.Session - [4c/1e2cfe] Submitted process > FASTQC_RAW (5)
+May-01 21:42:56.434 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:42:56.434 [Task submitter] INFO  nextflow.Session - [c0/2bcfc4] Submitted process > FASTQC_RAW (15)
+May-01 21:42:56.438 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:42:56.439 [Task submitter] INFO  nextflow.Session - [da/44e460] Submitted process > FASTQC_RAW (4)
+May-01 21:44:26.046 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: FASTQC_RAW (10); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/a1/a22483c70000511c1b711835a6c62b]
+May-01 21:44:26.085 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: FASTQC_RAW (9); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/b5/ecd3dd25458d8968d7bf562a170fa9]
+May-01 21:44:26.086 [Actor Thread 74] DEBUG nextflow.conda.CondaCache - conda found local env for environment=conda-forge::python=3.9; path=/export/space3/users/majiso/.nxf_work/conda/env-b07b307b987575d28cc433967ccaa200
+May-01 21:44:26.099 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:44:26.100 [Task submitter] INFO  nextflow.Session - [84/346683] Submitted process > PARSE_QC (1)
+May-01 21:44:26.108 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:44:26.120 [Task submitter] INFO  nextflow.Session - [81/9ae700] Submitted process > PARSE_QC (2)
+May-01 21:44:27.166 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 17; name: PARSE_QC (1); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/84/3466836b5986ff02e0fa08d5e7e4e1]
+May-01 21:44:27.167 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 18; name: PARSE_QC (2); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/81/9ae700f98fc1f8cda6747831a65851]
+May-01 21:44:27.189 [Actor Thread 93] DEBUG nextflow.conda.CondaCache - conda found local env for environment=bioconda::fastp=0.24.1; path=/export/space3/users/majiso/.nxf_work/conda/env-8d9a4af2399fe55ac096fcff397604c5
+May-01 21:44:27.199 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:44:27.199 [Task submitter] INFO  nextflow.Session - [15/209598] Submitted process > FASTP (2)
+May-01 21:44:27.205 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:44:27.206 [Task submitter] INFO  nextflow.Session - [86/b2e35e] Submitted process > FASTP (1)
+May-01 21:44:47.080 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: FASTQC_RAW (15); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/c0/2bcfc49e4f19132ba5f8bc2feab99d]
+May-01 21:44:47.100 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:44:47.100 [Task submitter] INFO  nextflow.Session - [82/21bea4] Submitted process > PARSE_QC (3)
+May-01 21:44:48.019 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 21; name: PARSE_QC (3); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/82/21bea4e55073c114b6a90eee896ff0]
+May-01 21:44:48.043 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:44:48.043 [Task submitter] INFO  nextflow.Session - [aa/11af1a] Submitted process > FASTP (3)
+May-01 21:44:48.049 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: FASTQC_RAW (16); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/74/6fcc350dd8d0daa90b2a5e3df08ad3]
+May-01 21:44:48.072 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:44:48.072 [Task submitter] INFO  nextflow.Session - [49/7776fa] Submitted process > PARSE_QC (4)
+May-01 21:44:48.961 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 23; name: PARSE_QC (4); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/49/7776fa1570833b5797b3b4fffd48cb]
+May-01 21:44:48.983 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:44:48.984 [Task submitter] INFO  nextflow.Session - [6f/53689e] Submitted process > FASTP (4)
+May-01 21:44:50.098 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: FASTQC_RAW (13); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/cf/f990956019f6a4e61599cfa4a96661]
+May-01 21:44:50.117 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:44:50.118 [Task submitter] INFO  nextflow.Session - [76/ad8efe] Submitted process > PARSE_QC (5)
+May-01 21:44:50.971 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 25; name: PARSE_QC (5); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/76/ad8efe465e388359865540d4fe365b]
+May-01 21:44:50.997 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:44:50.998 [Task submitter] INFO  nextflow.Session - [b2/4e8173] Submitted process > FASTP (5)
+May-01 21:44:52.076 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: FASTQC_RAW (14); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/c3/99f0eb17c80efc58c0b3781bebb24f]
+May-01 21:44:52.101 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:44:52.102 [Task submitter] INFO  nextflow.Session - [33/43c1e7] Submitted process > PARSE_QC (6)
+May-01 21:44:52.987 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 27; name: PARSE_QC (6); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/33/43c1e7ea161937f4acd13bea2ff435]
+May-01 21:44:53.012 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:44:53.013 [Task submitter] INFO  nextflow.Session - [52/3685b9] Submitted process > FASTP (6)
+May-01 21:45:00.063 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: FASTQC_RAW (5); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/4c/1e2cfed67151bccda080071fdbdc67]
+May-01 21:45:00.087 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:00.087 [Task submitter] INFO  nextflow.Session - [79/1f8b1c] Submitted process > PARSE_QC (7)
+May-01 21:45:01.017 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 29; name: PARSE_QC (7); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/79/1f8b1c063826b1bc66f05858fd6341]
+May-01 21:45:01.037 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:01.038 [Task submitter] INFO  nextflow.Session - [85/004b24] Submitted process > FASTP (7)
+May-01 21:45:03.032 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: FASTQC_RAW (6); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/c4/79a282f3ac80dd304237bbf99d4fb3]
+May-01 21:45:03.061 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:03.061 [Task submitter] INFO  nextflow.Session - [8a/ed0a4c] Submitted process > PARSE_QC (8)
+May-01 21:45:03.969 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 31; name: PARSE_QC (8); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/8a/ed0a4c3bb26bcbd725af3f9589c5b8]
+May-01 21:45:03.990 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:03.991 [Task submitter] INFO  nextflow.Session - [38/d44e9a] Submitted process > FASTP (8)
+May-01 21:45:09.068 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 19; name: FASTP (1); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/86/b2e35ec36f2f152e906dab429dba3e]
+May-01 21:45:09.092 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:09.093 [Task submitter] INFO  nextflow.Session - [4d/671b08] Submitted process > FASTQC_CLEAN (1)
+May-01 21:45:09.921 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 20; name: FASTP (2); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/15/209598b61e31c275b041d0064fd7cd]
+May-01 21:45:09.936 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:09.936 [Task submitter] INFO  nextflow.Session - [77/be3780] Submitted process > FASTQC_CLEAN (2)
+May-01 21:45:17.037 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: FASTQC_RAW (1); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/8f/168539c957330b3dabbbb53342ff51]
+May-01 21:45:17.068 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:17.068 [Task submitter] INFO  nextflow.Session - [48/e12694] Submitted process > PARSE_QC (9)
+May-01 21:45:17.969 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 35; name: PARSE_QC (9); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/48/e126945e055579319a6cb25d7e7ee5]
+May-01 21:45:17.985 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:17.985 [Task submitter] INFO  nextflow.Session - [9b/ea9c29] Submitted process > FASTP (9)
+May-01 21:45:25.068 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: FASTQC_RAW (2); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/2b/853002d039a6249cb8dd5ccc29bf66]
+May-01 21:45:25.084 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:25.084 [Task submitter] INFO  nextflow.Session - [b5/12aa47] Submitted process > PARSE_QC (10)
+May-01 21:45:25.970 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 37; name: PARSE_QC (10); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/b5/12aa47e8e7664d0f59993601f784ac]
+May-01 21:45:25.991 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:25.991 [Task submitter] INFO  nextflow.Session - [8e/77a8da] Submitted process > FASTP (10)
+May-01 21:45:27.074 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: FASTQC_RAW (4); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/da/44e4600ef2af2df50b5f43f7d8d844]
+May-01 21:45:27.094 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:27.095 [Task submitter] INFO  nextflow.Session - [e3/461967] Submitted process > PARSE_QC (11)
+May-01 21:45:28.021 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 39; name: PARSE_QC (11); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/e3/4619674d7a4ef082f35ba3818d0fae]
+May-01 21:45:28.038 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:28.038 [Task submitter] INFO  nextflow.Session - [24/a0273f] Submitted process > FASTP (11)
+May-01 21:45:40.098 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: FASTQC_RAW (3); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/47/76de20595ab4ceedc8b6df9706c048]
+May-01 21:45:40.116 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:40.117 [Task submitter] INFO  nextflow.Session - [80/8c996e] Submitted process > PARSE_QC (12)
+May-01 21:45:40.977 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 41; name: PARSE_QC (12); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/80/8c996e1bd8f8106e0acdbc740c6177]
+May-01 21:45:40.996 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:40.996 [Task submitter] INFO  nextflow.Session - [91/cf171c] Submitted process > FASTP (12)
+May-01 21:45:46.029 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: FASTQC_RAW (8); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/68/687199242fef6cb5465c9aa78f15a3]
+May-01 21:45:46.052 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:46.053 [Task submitter] INFO  nextflow.Session - [eb/7bdfc4] Submitted process > PARSE_QC (13)
+May-01 21:45:46.966 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 43; name: PARSE_QC (13); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/eb/7bdfc49da7e98309b3756f46f1eac2]
+May-01 21:45:46.984 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:46.985 [Task submitter] INFO  nextflow.Session - [b6/9b4a61] Submitted process > FASTP (13)
+May-01 21:45:47.034 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: FASTQC_RAW (11); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/08/2f0a145d066030e37486b5c47b4e92]
+May-01 21:45:47.049 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:47.049 [Task submitter] INFO  nextflow.Session - [eb/8ab0bf] Submitted process > PARSE_QC (14)
+May-01 21:45:47.549 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 22; name: FASTP (3); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/aa/11af1a9259da6a661be59d75ca60fa]
+May-01 21:45:47.569 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:47.569 [Task submitter] INFO  nextflow.Session - [6c/5b0e7a] Submitted process > FASTQC_CLEAN (3)
+May-01 21:45:48.006 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 45; name: PARSE_QC (14); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/eb/8ab0bf266e5d68e553a4179fa6987d]
+May-01 21:45:48.023 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:48.024 [Task submitter] INFO  nextflow.Session - [5f/a4f5ef] Submitted process > FASTP (14)
+May-01 21:45:48.030 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: FASTQC_RAW (7); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/2c/604baf18387dcf2d30786ac74f2657]
+May-01 21:45:48.052 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:48.053 [Task submitter] INFO  nextflow.Session - [9e/b11405] Submitted process > PARSE_QC (15)
+May-01 21:45:49.000 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 48; name: PARSE_QC (15); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/9e/b11405fe3110504a1ccd33295af47d]
+May-01 21:45:49.028 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:49.028 [Task submitter] INFO  nextflow.Session - [b3/4f0f74] Submitted process > FASTP (15)
+May-01 21:45:50.906 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 24; name: FASTP (4); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/6f/53689e60e31f7c408806836e7633fe]
+May-01 21:45:50.923 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:50.923 [Task submitter] INFO  nextflow.Session - [e6/f9c819] Submitted process > FASTQC_CLEAN (4)
+May-01 21:45:51.099 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: FASTQC_RAW (12); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/92/68699f545db3463af7177848957cf8]
+May-01 21:45:51.111 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:51.112 [Task submitter] INFO  nextflow.Session - [19/b25c9d] Submitted process > PARSE_QC (16)
+May-01 21:45:51.120 [Actor Thread 361] DEBUG nextflow.conda.CondaCache - conda found local env for environment=bioconda::multiqc=1.33; path=/export/space3/users/majiso/.nxf_work/conda/env-a1f0cec89e942272fdc2d3e7a090ed2c
+May-01 21:45:51.127 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:51.128 [Task submitter] INFO  nextflow.Session - [1c/f2ba57] Submitted process > MULTIQC_RAW
+May-01 21:45:52.077 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 51; name: PARSE_QC (16); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/19/b25c9d5ff767c180a06df8d1080bc6]
+May-01 21:45:52.095 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:52.095 [Task submitter] INFO  nextflow.Session - [ed/aff68d] Submitted process > FASTP (16)
+May-01 21:45:54.733 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 26; name: FASTP (5); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/b2/4e8173b62554e631d0b4266102fcb4]
+May-01 21:45:54.753 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:54.753 [Task submitter] INFO  nextflow.Session - [5f/eaffab] Submitted process > FASTQC_CLEAN (5)
+May-01 21:45:58.517 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 28; name: FASTP (6); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/52/3685b9c7ddb2dc9dae40cab9a7bc08]
+May-01 21:45:58.538 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:45:58.539 [Task submitter] INFO  nextflow.Session - [1c/e92f9d] Submitted process > FASTQC_CLEAN (6)
+May-01 21:46:01.778 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 30; name: FASTP (7); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/85/004b2429938683fa6b78049d0c4b67]
+May-01 21:46:01.790 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:46:01.791 [Task submitter] INFO  nextflow.Session - [62/9e4c64] Submitted process > FASTQC_CLEAN (7)
+May-01 21:46:04.149 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 52; name: MULTIQC_RAW; status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/1c/f2ba578622bf0a821c144d97cffea1]
+May-01 21:46:08.139 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 32; name: FASTP (8); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/38/d44e9a6bfa3289a07ccf9549c2b9b1]
+May-01 21:46:08.154 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:46:08.155 [Task submitter] INFO  nextflow.Session - [92/12554e] Submitted process > FASTQC_CLEAN (8)
+May-01 21:46:32.655 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 36; name: FASTP (9); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/9b/ea9c290df3044dc06cdce1619fac40]
+May-01 21:46:32.677 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:46:32.677 [Task submitter] INFO  nextflow.Session - [9c/fed5ed] Submitted process > FASTQC_CLEAN (9)
+May-01 21:46:43.906 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 38; name: FASTP (10); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/8e/77a8daaf63198df323b1354258faaf]
+May-01 21:46:43.933 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:46:43.934 [Task submitter] INFO  nextflow.Session - [35/2d9cf5] Submitted process > FASTQC_CLEAN (10)
+May-01 21:46:49.688 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 40; name: FASTP (11); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/24/a0273f8fb88945d735eedc5a260ced]
+May-01 21:46:49.710 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:46:49.711 [Task submitter] INFO  nextflow.Session - [14/161c82] Submitted process > FASTQC_CLEAN (11)
+May-01 21:46:50.154 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 33; name: FASTQC_CLEAN (1); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/4d/671b0891a7da0837b124d016807edd]
+May-01 21:46:52.976 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 34; name: FASTQC_CLEAN (2); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/77/be3780fd8a2eabffd2e829d5ddac19]
+May-01 21:47:00.807 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 42; name: FASTP (12); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/91/cf171c2be8784f575609dd1925a073]
+May-01 21:47:00.829 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:47:00.829 [Task submitter] INFO  nextflow.Session - [00/d42a46] Submitted process > FASTQC_CLEAN (12)
+May-01 21:47:07.468 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 44; name: FASTP (13); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/b6/9b4a612cfc3ccdf9845a70be522e0a]
+May-01 21:47:07.487 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:47:07.488 [Task submitter] INFO  nextflow.Session - [b8/242c6e] Submitted process > FASTQC_CLEAN (13)
+May-01 21:47:10.893 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 49; name: FASTP (15); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/b3/4f0f741a1f40487abf686f8612b332]
+May-01 21:47:10.915 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:47:10.916 [Task submitter] INFO  nextflow.Session - [2a/5094b3] Submitted process > FASTQC_CLEAN (14)
+May-01 21:47:15.343 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 47; name: FASTP (14); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/5f/a4f5ef97859ea3194143f002ce8b88]
+May-01 21:47:15.371 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:47:15.371 [Task submitter] INFO  nextflow.Session - [9f/da269a] Submitted process > FASTQC_CLEAN (15)
+May-01 21:47:22.141 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 53; name: FASTP (16); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/ed/aff68d760b124c6841b460d4ccec01]
+May-01 21:47:22.156 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:47:22.156 [Task submitter] INFO  nextflow.Session - [84/1a0527] Submitted process > FASTQC_CLEAN (16)
+May-01 21:47:48.688 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 46; name: FASTQC_CLEAN (3); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/6c/5b0e7a54e5dfae3b0c50f39d15113d]
+May-01 21:47:52.066 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 50; name: FASTQC_CLEAN (4); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/e6/f9c81977e7931e3938a41d5188e825]
+May-01 21:47:56.178 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 12 -- submitted tasks are shown below
+~> TaskHandler[id: 54; name: FASTQC_CLEAN (5); status: RUNNING; exit: -; error: -; workDir: /export/space3/users/majiso/.nxf_work/5f/eaffabf72a22466c41a95974e5d972]
+~> TaskHandler[id: 55; name: FASTQC_CLEAN (6); status: RUNNING; exit: -; error: -; workDir: /export/space3/users/majiso/.nxf_work/1c/e92f9d029ac2a6d4ff201fde7a3ece]
+~> TaskHandler[id: 56; name: FASTQC_CLEAN (7); status: RUNNING; exit: -; error: -; workDir: /export/space3/users/majiso/.nxf_work/62/9e4c64e213a278bdc4c0ad550a7f71]
+~> TaskHandler[id: 57; name: FASTQC_CLEAN (8); status: RUNNING; exit: -; error: -; workDir: /export/space3/users/majiso/.nxf_work/92/12554ee090d2b3334fd175ecae1b9c]
+~> TaskHandler[id: 58; name: FASTQC_CLEAN (9); status: RUNNING; exit: -; error: -; workDir: /export/space3/users/majiso/.nxf_work/9c/fed5ed38676e0f7d6ed188c2b7d239]
+~> TaskHandler[id: 59; name: FASTQC_CLEAN (10); status: RUNNING; exit: -; error: -; workDir: /export/space3/users/majiso/.nxf_work/35/2d9cf57f9da8d45baf366b7f13ee47]
+~> TaskHandler[id: 60; name: FASTQC_CLEAN (11); status: RUNNING; exit: -; error: -; workDir: /export/space3/users/majiso/.nxf_work/14/161c8260b059a03934efa989cfaa09]
+~> TaskHandler[id: 61; name: FASTQC_CLEAN (12); status: RUNNING; exit: -; error: -; workDir: /export/space3/users/majiso/.nxf_work/00/d42a465a1603ac585d108f1aa555a4]
+~> TaskHandler[id: 62; name: FASTQC_CLEAN (13); status: RUNNING; exit: -; error: -; workDir: /export/space3/users/majiso/.nxf_work/b8/242c6ef8d7653afa72a9038e04f156]
+~> TaskHandler[id: 63; name: FASTQC_CLEAN (14); status: RUNNING; exit: -; error: -; workDir: /export/space3/users/majiso/.nxf_work/2a/5094b359d68c7a144a8b47d91c5436]
+.. remaining tasks omitted.
+May-01 21:48:02.673 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 55; name: FASTQC_CLEAN (6); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/1c/e92f9d029ac2a6d4ff201fde7a3ece]
+May-01 21:48:02.882 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 54; name: FASTQC_CLEAN (5); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/5f/eaffabf72a22466c41a95974e5d972]
+May-01 21:48:13.983 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 56; name: FASTQC_CLEAN (7); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/62/9e4c64e213a278bdc4c0ad550a7f71]
+May-01 21:48:19.250 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 57; name: FASTQC_CLEAN (8); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/92/12554ee090d2b3334fd175ecae1b9c]
+May-01 21:49:04.069 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 59; name: FASTQC_CLEAN (10); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/35/2d9cf57f9da8d45baf366b7f13ee47]
+May-01 21:49:04.850 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 58; name: FASTQC_CLEAN (9); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/9c/fed5ed38676e0f7d6ed188c2b7d239]
+May-01 21:49:11.789 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 60; name: FASTQC_CLEAN (11); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/14/161c8260b059a03934efa989cfaa09]
+May-01 21:49:20.917 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 61; name: FASTQC_CLEAN (12); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/00/d42a465a1603ac585d108f1aa555a4]
+May-01 21:49:44.543 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 62; name: FASTQC_CLEAN (13); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/b8/242c6ef8d7653afa72a9038e04f156]
+May-01 21:49:50.081 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 63; name: FASTQC_CLEAN (14); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/2a/5094b359d68c7a144a8b47d91c5436]
+May-01 21:49:53.422 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 64; name: FASTQC_CLEAN (15); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/9f/da269a7b9d8f03315d6cdeff55d858]
+May-01 21:50:00.235 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 65; name: FASTQC_CLEAN (16); status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/84/1a0527b12ead55e37019a3cd84fd35]
+May-01 21:50:00.271 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-01 21:50:00.271 [Task submitter] INFO  nextflow.Session - [36/99a260] Submitted process > MULTIQC_CLEAN
+May-01 21:50:08.468 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 66; name: MULTIQC_CLEAN; status: COMPLETED; exit: 0; error: -; workDir: /export/space3/users/majiso/.nxf_work/36/99a260613f8f9c1601089e96582437]
+May-01 21:50:08.475 [main] DEBUG nextflow.Session - Session await > all processes finished
+May-01 21:50:08.572 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+May-01 21:50:08.573 [main] DEBUG nextflow.Session - Session await > all barriers passed
+May-01 21:50:08.581 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+May-01 21:50:08.581 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+May-01 21:50:08.589 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=66; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1h 30m 37s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=17; peakCpus=17; peakMemory=0; ]
+May-01 21:50:08.589 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+May-01 21:50:08.591 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+May-01 21:50:09.340 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+May-01 21:50:09.553 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+May-01 21:50:09.564 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+May-01 21:50:09.564 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

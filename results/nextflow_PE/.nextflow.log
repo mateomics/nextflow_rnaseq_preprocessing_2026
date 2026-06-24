@@ -1,0 +1,14 @@
+May-01 18:30:44.209 [main] DEBUG nextflow.cli.Launcher - $> nextflow run ./src/nextflow_QC_cleaning.nf --input './data/raw/*_1.fastq.gz' --outdir ./results/nextflow_SE -with-conda -with-report -with-trace -resume
+May-01 18:30:44.368 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.3
+May-01 18:30:44.401 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/majiso/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2
+May-01 18:30:44.420 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+May-01 18:30:44.421 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+May-01 18:30:44.427 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+May-01 18:30:44.458 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+May-01 18:30:44.480 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /home/majiso/.nextflow/scm
+May-01 18:30:44.498 [main] DEBUG nextflow.cli.Launcher - Operation aborted
+nextflow.exception.AbortOperationException: Cannot find script file: ./src/nextflow_QC_cleaning.nf
+	at nextflow.cli.CmdRun.getScriptFile(CmdRun.groovy:517)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:321)
+	at nextflow.cli.Launcher.run(Launcher.groovy:503)
+	at nextflow.cli.Launcher.main(Launcher.groovy:657)

@@ -1,0 +1,150 @@
+May-01 22:20:35.456 [main] DEBUG nextflow.cli.Launcher - $> nextflow run ./src/nextflow_QC_cleaning.nf --input './data/raw/*.fastq.gz' --outdir ./results/nextflow_PE -with-conda -with-report report.html -with-trace trace.txt -with-timeline timeline.html -resume
+May-01 22:20:35.569 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.3
+May-01 22:20:35.587 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/majiso/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2
+May-01 22:20:35.598 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+May-01 22:20:35.599 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+May-01 22:20:35.601 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+May-01 22:20:35.613 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+May-01 22:20:35.633 [main] DEBUG nextflow.config.ConfigBuilder - Found config home: /home/majiso/.nextflow/config
+May-01 22:20:35.637 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/majiso/.nextflow/config
+May-01 22:20:35.661 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/majiso/.nextflow/secrets/store.json
+May-01 22:20:35.665 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@9f6e406] - activable => nextflow.secret.LocalSecretsProvider@9f6e406
+May-01 22:20:35.676 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+May-01 22:20:36.071 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+May-01 22:20:36.084 [main] DEBUG nextflow.cli.CmdRun - Launching `./src/nextflow_QC_cleaning.nf` [sleepy_stallman] DSL2 - revision: 54e9cd60d5
+May-01 22:20:36.086 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+May-01 22:20:36.086 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+May-01 22:20:36.129 [main] DEBUG nextflow.Session - Session UUID: bf00e763-0863-4710-bda5-a957134846a5
+May-01 22:20:36.129 [main] DEBUG nextflow.Session - Run name: sleepy_stallman
+May-01 22:20:36.130 [main] DEBUG nextflow.Session - Executor pool size: 96
+May-01 22:20:36.139 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+May-01 22:20:36.165 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.3 build 5916
+  Created: 09-07-2024 19:35 UTC (13:35 CDT)
+  System: Linux 5.14.0-654.el9.x86_64
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 21-internal-adhoc.conda.src
+  Encoding: UTF-8 (UTF-8)
+  Process: 3989737@chaac.lcg.unam.mx [132.248.220.18]
+  CPUs: 96 - Mem: 754.6 GB (52.3 GB) - Swap: 4 GB (220 KB) - Virtual threads ON
+May-01 22:20:36.200 [main] DEBUG nextflow.Session - Work-dir: /export/space3/users/majiso/.nxf_work [xfs]
+May-01 22:20:36.201 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /export/space3/users/majiso/LCG_Gen22/LCG_Sem4/Transcriptomica/Tabula_Muris_Transcriptomics_2026/src/bin
+May-01 22:20:36.211 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+May-01 22:20:36.221 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+May-01 22:20:36.254 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+May-01 22:20:36.263 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
+May-01 22:20:36.317 [main] DEBUG nextflow.Session - Session start
+May-01 22:20:36.320 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /export/space3/users/majiso/LCG_Gen22/LCG_Sem4/Transcriptomica/Tabula_Muris_Transcriptomics_2026/trace.txt
+May-01 22:20:36.581 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+May-01 22:20:37.050 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+May-01 22:20:37.050 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-01 22:20:37.055 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+May-01 22:20:37.061 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=96; memory=754.6 GB; capacity=96; pollInterval=100ms; dumpInterval=5m
+May-01 22:20:37.063 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+May-01 22:20:37.115 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+May-01 22:20:37.116 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-01 22:20:37.130 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+May-01 22:20:37.130 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-01 22:20:37.151 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+May-01 22:20:37.151 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-01 22:20:37.158 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+May-01 22:20:37.158 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-01 22:20:37.167 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+May-01 22:20:37.167 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-01 22:20:37.171 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: FASTQC_RAW, FASTQC, FASTQC_CLEAN, MULTIQC_CLEAN, MULTIQC_RAW, MULTIQC, PARSE_QC, FASTP
+May-01 22:20:37.171 [main] DEBUG nextflow.Session - Igniting dataflow network (7)
+May-01 22:20:37.176 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: ./data/raw/; pattern: *.fastq.gz; options: [checkIfExists:true]
+May-01 22:20:37.177 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTQC_RAW
+May-01 22:20:37.177 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MULTIQC_RAW
+May-01 22:20:37.178 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PARSE_QC
+May-01 22:20:37.178 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTP
+May-01 22:20:37.178 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTQC_CLEAN
+May-01 22:20:37.179 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MULTIQC_CLEAN
+May-01 22:20:37.201 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_369f67487ac61b3b: /export/space3/users/majiso/LCG_Gen22/LCG_Sem4/Transcriptomica/Tabula_Muris_Transcriptomics_2026/src/./parse_fastqc.nf
+  Script_1f5af330d311622f: /export/space3/users/majiso/LCG_Gen22/LCG_Sem4/Transcriptomica/Tabula_Muris_Transcriptomics_2026/src/./fastp.nf
+  Script_a01de3a0acead880: /export/space3/users/majiso/LCG_Gen22/LCG_Sem4/Transcriptomica/Tabula_Muris_Transcriptomics_2026/src/nextflow_QC_cleaning.nf
+  Script_3f1d6c4654e15d34: /export/space3/users/majiso/LCG_Gen22/LCG_Sem4/Transcriptomica/Tabula_Muris_Transcriptomics_2026/src/./fastqc.nf
+  Script_a5e5d0b44b4c277a: /export/space3/users/majiso/LCG_Gen22/LCG_Sem4/Transcriptomica/Tabula_Muris_Transcriptomics_2026/src/./multiqc.nf
+May-01 22:20:37.202 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+May-01 22:20:37.202 [main] DEBUG nextflow.Session - Session await
+May-01 22:20:37.340 [Actor Thread 43] DEBUG nextflow.conda.CondaCache - conda found local env for environment=bioconda::fastqc=0.12.1; path=/export/space3/users/majiso/.nxf_work/conda/env-49dea791c31ead673ed2e341e1c6d206
+May-01 22:20:37.491 [Actor Thread 41] INFO  nextflow.processor.TaskProcessor - [74/6fcc35] Cached process > FASTQC_RAW (16)
+May-01 22:20:37.490 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [c4/79a282] Cached process > FASTQC_RAW (6)
+May-01 22:20:37.490 [Actor Thread 39] INFO  nextflow.processor.TaskProcessor - [c0/2bcfc4] Cached process > FASTQC_RAW (15)
+May-01 22:20:37.491 [Actor Thread 30] INFO  nextflow.processor.TaskProcessor - [b5/ecd3dd] Cached process > FASTQC_RAW (9)
+May-01 22:20:37.490 [Actor Thread 36] INFO  nextflow.processor.TaskProcessor - [cf/f99095] Cached process > FASTQC_RAW (13)
+May-01 22:20:37.491 [Actor Thread 23] INFO  nextflow.processor.TaskProcessor - [47/76de20] Cached process > FASTQC_RAW (3)
+May-01 22:20:37.491 [Actor Thread 32] INFO  nextflow.processor.TaskProcessor - [a1/a22483] Cached process > FASTQC_RAW (10)
+May-01 22:20:37.491 [Actor Thread 24] INFO  nextflow.processor.TaskProcessor - [da/44e460] Cached process > FASTQC_RAW (4)
+May-01 22:20:37.491 [Actor Thread 38] INFO  nextflow.processor.TaskProcessor - [c3/99f0eb] Cached process > FASTQC_RAW (14)
+May-01 22:20:37.491 [Actor Thread 21] INFO  nextflow.processor.TaskProcessor - [8f/168539] Cached process > FASTQC_RAW (1)
+May-01 22:20:37.490 [Actor Thread 25] INFO  nextflow.processor.TaskProcessor - [4c/1e2cfe] Cached process > FASTQC_RAW (5)
+May-01 22:20:37.490 [Actor Thread 35] INFO  nextflow.processor.TaskProcessor - [92/68699f] Cached process > FASTQC_RAW (12)
+May-01 22:20:37.490 [Actor Thread 22] INFO  nextflow.processor.TaskProcessor - [2b/853002] Cached process > FASTQC_RAW (2)
+May-01 22:20:37.491 [Actor Thread 34] INFO  nextflow.processor.TaskProcessor - [08/2f0a14] Cached process > FASTQC_RAW (11)
+May-01 22:20:37.490 [Actor Thread 28] INFO  nextflow.processor.TaskProcessor - [68/687199] Cached process > FASTQC_RAW (8)
+May-01 22:20:37.491 [Actor Thread 27] INFO  nextflow.processor.TaskProcessor - [2c/604baf] Cached process > FASTQC_RAW (7)
+May-01 22:20:37.535 [Actor Thread 79] DEBUG nextflow.conda.CondaCache - conda found local env for environment=conda-forge::python=3.9; path=/export/space3/users/majiso/.nxf_work/conda/env-b07b307b987575d28cc433967ccaa200
+May-01 22:20:37.551 [Actor Thread 60] INFO  nextflow.processor.TaskProcessor - [82/21bea4] Cached process > PARSE_QC (4)
+May-01 22:20:37.551 [Actor Thread 57] INFO  nextflow.processor.TaskProcessor - [b5/12aa47] Cached process > PARSE_QC (3)
+May-01 22:20:37.551 [Actor Thread 75] INFO  nextflow.processor.TaskProcessor - [8a/ed0a4c] Cached process > PARSE_QC (9)
+May-01 22:20:37.551 [Actor Thread 66] INFO  nextflow.processor.TaskProcessor - [48/e12694] Cached process > PARSE_QC (6)
+May-01 22:20:37.551 [Actor Thread 64] INFO  nextflow.processor.TaskProcessor - [19/b25c9d] Cached process > PARSE_QC (5)
+May-01 22:20:37.551 [Actor Thread 80] INFO  nextflow.processor.TaskProcessor - [9e/b11405] Cached process > PARSE_QC (11)
+May-01 22:20:37.551 [Actor Thread 53] INFO  nextflow.processor.TaskProcessor - [81/9ae700] Cached process > PARSE_QC (2)
+May-01 22:20:37.551 [Actor Thread 69] INFO  nextflow.processor.TaskProcessor - [80/8c996e] Cached process > PARSE_QC (7)
+May-01 22:20:37.551 [Actor Thread 72] INFO  nextflow.processor.TaskProcessor - [84/346683] Cached process > PARSE_QC (8)
+May-01 22:20:37.551 [Actor Thread 85] INFO  nextflow.processor.TaskProcessor - [76/ad8efe] Cached process > PARSE_QC (13)
+May-01 22:20:37.551 [Actor Thread 50] INFO  nextflow.processor.TaskProcessor - [eb/8ab0bf] Cached process > PARSE_QC (1)
+May-01 22:20:37.551 [Actor Thread 78] INFO  nextflow.processor.TaskProcessor - [49/7776fa] Cached process > PARSE_QC (10)
+May-01 22:20:37.552 [Actor Thread 90] INFO  nextflow.processor.TaskProcessor - [e3/461967] Cached process > PARSE_QC (15)
+May-01 22:20:37.553 [Actor Thread 87] INFO  nextflow.processor.TaskProcessor - [79/1f8b1c] Cached process > PARSE_QC (14)
+May-01 22:20:37.553 [Actor Thread 82] INFO  nextflow.processor.TaskProcessor - [eb/7bdfc4] Cached process > PARSE_QC (12)
+May-01 22:20:37.556 [Actor Thread 96] INFO  nextflow.processor.TaskProcessor - [33/43c1e7] Cached process > PARSE_QC (16)
+May-01 22:20:37.568 [Actor Thread 155] DEBUG nextflow.conda.CondaCache - conda found local env for environment=bioconda::fastp=0.24.1; path=/export/space3/users/majiso/.nxf_work/conda/env-8d9a4af2399fe55ac096fcff397604c5
+May-01 22:20:37.572 [Actor Thread 166] DEBUG nextflow.conda.CondaCache - conda found local env for environment=bioconda::multiqc=1.33; path=/export/space3/users/majiso/.nxf_work/conda/env-a1f0cec89e942272fdc2d3e7a090ed2c
+May-01 22:20:37.586 [Actor Thread 113] INFO  nextflow.processor.TaskProcessor - [8e/77a8da] Cached process > FASTP (3)
+May-01 22:20:37.586 [Actor Thread 139] INFO  nextflow.processor.TaskProcessor - [aa/11af1a] Cached process > FASTP (8)
+May-01 22:20:37.588 [Actor Thread 134] INFO  nextflow.processor.TaskProcessor - [1c/f2ba57] Cached process > MULTIQC_RAW
+May-01 22:20:37.588 [Actor Thread 143] INFO  nextflow.processor.TaskProcessor - [86/b2e35e] Cached process > FASTP (9)
+May-01 22:20:37.590 [Actor Thread 109] INFO  nextflow.processor.TaskProcessor - [5f/a4f5ef] Cached process > FASTP (2)
+May-01 22:20:37.590 [Actor Thread 130] INFO  nextflow.processor.TaskProcessor - [b3/4f0f74] Cached process > FASTP (6)
+May-01 22:20:37.590 [Actor Thread 152] INFO  nextflow.processor.TaskProcessor - [b2/4e8173] Cached process > FASTP (11)
+May-01 22:20:37.590 [Actor Thread 147] INFO  nextflow.processor.TaskProcessor - [91/cf171c] Cached process > FASTP (10)
+May-01 22:20:37.590 [Actor Thread 136] INFO  nextflow.processor.TaskProcessor - [ed/aff68d] Cached process > FASTP (7)
+May-01 22:20:37.590 [Actor Thread 156] INFO  nextflow.processor.TaskProcessor - [24/a0273f] Cached process > FASTP (12)
+May-01 22:20:37.591 [Actor Thread 119] INFO  nextflow.processor.TaskProcessor - [15/209598] Cached process > FASTP (4)
+May-01 22:20:37.591 [Actor Thread 158] INFO  nextflow.processor.TaskProcessor - [b6/9b4a61] Cached process > FASTP (13)
+May-01 22:20:37.591 [Actor Thread 160] INFO  nextflow.processor.TaskProcessor - [85/004b24] Cached process > FASTP (14)
+May-01 22:20:37.591 [Actor Thread 105] INFO  nextflow.processor.TaskProcessor - [9b/ea9c29] Cached process > FASTP (1)
+May-01 22:20:37.591 [Actor Thread 162] INFO  nextflow.processor.TaskProcessor - [52/3685b9] Cached process > FASTP (15)
+May-01 22:20:37.591 [Actor Thread 125] INFO  nextflow.processor.TaskProcessor - [6f/53689e] Cached process > FASTP (5)
+May-01 22:20:37.593 [Actor Thread 164] INFO  nextflow.processor.TaskProcessor - [38/d44e9a] Cached process > FASTP (16)
+May-01 22:20:37.603 [Actor Thread 171] INFO  nextflow.processor.TaskProcessor - [35/2d9cf5] Cached process > FASTQC_CLEAN (1)
+May-01 22:20:37.603 [Actor Thread 179] INFO  nextflow.processor.TaskProcessor - [84/1a0527] Cached process > FASTQC_CLEAN (4)
+May-01 22:20:37.607 [Actor Thread 174] INFO  nextflow.processor.TaskProcessor - [4d/671b08] Cached process > FASTQC_CLEAN (2)
+May-01 22:20:37.607 [Actor Thread 182] INFO  nextflow.processor.TaskProcessor - [00/d42a46] Cached process > FASTQC_CLEAN (5)
+May-01 22:20:37.608 [Actor Thread 176] INFO  nextflow.processor.TaskProcessor - [6c/5b0e7a] Cached process > FASTQC_CLEAN (3)
+May-01 22:20:37.609 [Actor Thread 185] INFO  nextflow.processor.TaskProcessor - [14/161c82] Cached process > FASTQC_CLEAN (6)
+May-01 22:20:37.609 [Actor Thread 191] INFO  nextflow.processor.TaskProcessor - [1c/e92f9d] Cached process > FASTQC_CLEAN (8)
+May-01 22:20:37.610 [Actor Thread 194] INFO  nextflow.processor.TaskProcessor - [e6/f9c819] Cached process > FASTQC_CLEAN (9)
+May-01 22:20:37.612 [Actor Thread 200] INFO  nextflow.processor.TaskProcessor - [b8/242c6e] Cached process > FASTQC_CLEAN (12)
+May-01 22:20:37.612 [Actor Thread 205] INFO  nextflow.processor.TaskProcessor - [77/be3780] Cached process > FASTQC_CLEAN (14)
+May-01 22:20:37.612 [Actor Thread 198] INFO  nextflow.processor.TaskProcessor - [9f/da269a] Cached process > FASTQC_CLEAN (11)
+May-01 22:20:37.612 [Actor Thread 203] INFO  nextflow.processor.TaskProcessor - [92/12554e] Cached process > FASTQC_CLEAN (13)
+May-01 22:20:37.613 [Actor Thread 188] INFO  nextflow.processor.TaskProcessor - [2a/5094b3] Cached process > FASTQC_CLEAN (7)
+May-01 22:20:37.613 [Actor Thread 196] INFO  nextflow.processor.TaskProcessor - [5f/eaffab] Cached process > FASTQC_CLEAN (10)
+May-01 22:20:37.617 [Actor Thread 210] INFO  nextflow.processor.TaskProcessor - [9c/fed5ed] Cached process > FASTQC_CLEAN (16)
+May-01 22:20:37.619 [Actor Thread 208] INFO  nextflow.processor.TaskProcessor - [62/9e4c64] Cached process > FASTQC_CLEAN (15)
+May-01 22:20:37.634 [Actor Thread 256] INFO  nextflow.processor.TaskProcessor - [36/99a260] Cached process > MULTIQC_CLEAN
+May-01 22:20:37.639 [main] DEBUG nextflow.Session - Session await > all processes finished
+May-01 22:20:37.675 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+May-01 22:20:37.675 [main] DEBUG nextflow.Session - Session await > all barriers passed
+May-01 22:20:37.680 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+May-01 22:20:37.686 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=66; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=1h 30m 37s;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+May-01 22:20:37.687 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+May-01 22:20:37.689 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+May-01 22:20:38.525 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+May-01 22:20:38.810 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+May-01 22:20:38.820 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+May-01 22:20:38.820 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
